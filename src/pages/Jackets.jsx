@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import { useSelector } from "react-redux";
+import FilterBar from '../components/forCategories/FilterBar';
+import Products from '../components/forCategories/Products';
 
 const Jackets = () => {
-  return (
-    <div>Jackets</div>
-  )
-}
+  const store = useSelector((state) => state.store.onStore);
+  const jackets = store.filter((product) => product.title === "Jackets");
 
-export default Jackets
+  return (
+    <div>
+      <FilterBar />
+      <Products data={jackets} />
+    </div>
+  );
+};
+
+export default Jackets;

@@ -1,0 +1,9 @@
+@use '../base/var' as v;
+
+.filterBar{
+    width: 100%;
+    border: 1px solid;
+    text-align: right;
+    padding: v.$padding;
+    margin-bottom: v.$padding; //provisional
+}

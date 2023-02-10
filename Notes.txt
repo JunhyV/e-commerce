@@ -1,0 +1,10 @@
+Cambios en versiones: 
+
+Config 1.2
+1.- Se termino de agregar SASS y notas de su compilacion
+2.- Se establecio un previo de las funciones de la store
+
+Config 1.3
+1.- Store ya tiene almacenada como valor inicial los productos obtenidos desde el backend
+2.- Se hizo una estructura basica del header para navegar por los enlaces
+3.- La configuracion del componente products permite desplegar los productos por categorias

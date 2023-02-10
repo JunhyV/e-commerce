@@ -4,13 +4,13 @@ import UserOptions from './UserOptions'
 
 const Header = () => {
   return (
-    <div>
+    <header className='header'>
       <NavBar/>
       <div>
               E-commerce Name
       </div>
       <UserOptions/>
-    </div>
+    </header>
   )
 }
 
