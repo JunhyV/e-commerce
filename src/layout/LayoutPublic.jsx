@@ -4,14 +4,16 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
 
+
 const LayoutPublic = () => {
 
-  const state = useSelector((state) => state.store.onStore);
+  const state = useSelector((state) => state.store);
   console.log(state);
 
   return (
     <div>
       <Header />
+
       <Outlet />
       <Footer />
     </div>
