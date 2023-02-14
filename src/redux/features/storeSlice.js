@@ -35,6 +35,7 @@ export const storeSlice = createSlice({
             ...state,
             onCart: [...state.onCart, { ...identificarProducto, quantity: 1 }],
           };
+
     },
 
     removeFormCart: (state, action) => {

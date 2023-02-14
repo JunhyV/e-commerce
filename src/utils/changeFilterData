@@ -1,0 +1,5 @@
+export let changeData = (value, type) => {
+  let filter = store.filter((product) => product.price < value);
+  let filterProducts = filter.filter((product) => product.title === type);
+  set(filterProducts);
+};

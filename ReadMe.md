@@ -11,3 +11,9 @@ Config 1.3
 
 Config 1.4
 1.- Se agregaron las funcionalidades de la tienda (Falta modificar cantidades)
+
+Config 1.5
+1.- Parte del home
+2.- Agregar animacion de clase 'zoom' y text decoration: none con clase 'link'
+3.- Las paginas por categoria salen solo si la pantalla es mayor a 1140px
+4.- Agregados SVG's

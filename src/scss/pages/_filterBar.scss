@@ -1,9 +1,15 @@
 @use '../base/var' as v;
 
-.filterBar{
+.filter{
     width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.filter__priceRange{
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
     border: 1px solid;
     text-align: right;
-    padding: v.$padding;
-    margin-bottom: v.$padding; //provisional
+    padding: 1rem;
 }

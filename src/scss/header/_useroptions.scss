@@ -1,0 +1,27 @@
+.user__options {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2rem;
+  position: relative;
+
+  .user__btn:hover {
+    cursor: pointer;
+  }
+  .cart__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    width: 1.5rem;
+    height: 1.2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .cart__quantity{
+        font-size: 1rem;
+    }
+  }
+}

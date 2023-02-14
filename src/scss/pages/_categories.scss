@@ -1,20 +1,29 @@
-@use '../base/var' as v;
-.products{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-}
-.product__card{
+@use "../base/var" as v;
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  margin: 5rem 10rem;
+  gap: 5rem;
+
+  .product__card {
     width: 25rem;
-    height: 40rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-}
-.product__img{
-    background-color: rgb(177, 177, 177);
+  }
+  .product__zoom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 25rem;
     height: 25rem;
-    padding: v.$padding;
+    background-color: rgba(30, 228, 73, 0.473);
+
+    .product__img {
+      width: 23rem;
+      height: 23rem;
+    }
+  }
 }

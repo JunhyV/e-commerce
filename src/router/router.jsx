@@ -1,4 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
+import Item from "../components/forEach/Item";
 import LayoutPublic from "../layout/LayoutPublic";
 import NotFound from "../layout/NotFound";
 import Hats from "../pages/Hats";
@@ -37,6 +38,10 @@ export const router = createBrowserRouter([
             {
                 path: '/womens',
                 element: <Womens/>,
+            },
+            {
+                path: "/store/:id",
+                element: <Item />,
             },
         ],
     },

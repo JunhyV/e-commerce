@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { addTocart, clearCart, removeAllFormCart, removeFormCart } from "../redux/features/storeSlice";
 
 const Cart = () => {
-  const cart = useSelector()
   const dispatch = useDispatch();
+
   return (
     
     <div>
