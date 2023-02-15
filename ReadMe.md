@@ -17,3 +17,9 @@ Config 1.5
 2.- Agregar animacion de clase 'zoom' y text decoration: none con clase 'link'
 3.- Las paginas por categoria salen solo si la pantalla es mayor a 1140px
 4.- Agregados SVG's
+5.- Agregados filtros
+
+Config 1.6
+1.- Agregado hook de filtro
+2.- Las paginas individuales ya tienen items recomendados
+3.- Los items recomendados dan acceso a sus paginas individuales

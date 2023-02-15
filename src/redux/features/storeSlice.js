@@ -14,9 +14,8 @@ export const storeSlice = createSlice({
       let identificarProducto = state.onStore.find(
         (product) => product.item_id === action.payload
       );
-
-      /*             console.log(current(identificarProducto));
-            //Sin current la consola muestra un Proxy */
+                  console.log(current(identificarProducto));
+            //Sin current la consola muestra un Proxy 
 
       let articuloEnCarro = state.onCart.find(
         (product) => product.item_id === identificarProducto.item_id
@@ -42,7 +41,7 @@ export const storeSlice = createSlice({
       let removerProducto = state.onCart.find(
         (product) => product.item_id === action.payload
       );
-      console.log(current(removerProducto));
+/*       console.log(current(removerProducto)); */
 
       return removerProducto.quantity > 1
         ? {

@@ -1,18 +1,19 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import FilterBar from '../components/forCategories/FilterBar';
-import Products from '../components/forCategories/Products';
+import FilterBar from '../components/byCategories/FilterBar';
+import FilterSelector from '../components/byCategories/FilterSelector';
+import Products from '../components/byCategories/Products';
+import useFilters from '../hooks/useFilter';
 
 const Womens = () => {
-  const store = useSelector((state) => state.store.onStore);
-  const womens = store.filter((product) => product.title === "Womens");
+  const { data, orderByCheapest, orderByExpensive, orderDefault, changeData} = useFilters('Womens');
 
   return (
-    <div>
-      <FilterBar />
-      <Products data={womens} />
+    <div >
+      <FilterSelector orderByCheapest={orderByCheapest} orderByExpensive={orderByExpensive} orderDefault={orderDefault}/>
+      <FilterBar changeData={changeData} min={90} max={186}/>
+      <Products data={data}/>
     </div>
-  );
+  )
 };
 
 export default Womens;

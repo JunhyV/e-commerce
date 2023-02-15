@@ -1,4 +1,5 @@
 @use "../base/var" as v;
+@use '../base/mixins' as m;
 
 .home {
   width: 100%;
@@ -8,6 +9,8 @@
   justify-content: center;
   gap: v.$separacion;
   padding: v.$separacion;
+
+  @include m.color(red);
 }
 .home__grid {
   display: grid;

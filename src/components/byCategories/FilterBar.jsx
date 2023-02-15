@@ -1,6 +1,6 @@
 import React from "react";
 
-const FilterBar = ({changeData, min, max, type}) => {
+const FilterBar = ({changeData, min, max}) => {
   return (
     <div className="filter">
       <div className="filter__priceRange">
@@ -10,10 +10,10 @@ const FilterBar = ({changeData, min, max, type}) => {
           max={max}
           onChange={(e) => {
             rangeValue.value = `$${e.target.value}`;
-            changeData(e.target.value, type)
+            changeData(e.target.value)
           }}
         />
-        <output id="rangeValue">$50</output>
+        <output id="rangeValue"> -</output>
       </div>
     </div>
   );
