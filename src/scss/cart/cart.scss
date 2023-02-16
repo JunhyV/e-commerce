@@ -1,0 +1,11 @@
+@use '../base/var' as v;
+
+.cart__content{
+    position: absolute;
+    top: - v.$separacion;
+    right: - v.$separacion;
+    z-index: 2;
+    width: 50rem;
+    height: 100vh;
+    background-color: aqua;
+}

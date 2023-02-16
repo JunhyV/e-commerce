@@ -3,3 +3,12 @@
     display: flex;
     gap: 1rem;
 }
+
+.navbar__hidden{
+    position: absolute;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: blue;
+}

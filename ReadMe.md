@@ -23,3 +23,10 @@ Config 1.6
 1.- Agregado hook de filtro
 2.- Las paginas individuales ya tienen items recomendados
 3.- Los items recomendados dan acceso a sus paginas individuales
+
+Config 1.7
+1.- Despliegue de carrito, usuario y navbar
+2.- Elementos del carrito
+3.- Pagina de login
+4.- Diseño del navbar
+5.- Local Storage

@@ -5,6 +5,7 @@ import NotFound from "../layout/NotFound";
 import Hats from "../pages/Hats";
 import Home from "../pages/Home";
 import Jackets from "../pages/Jackets";
+import Login from "../pages/Login";
 import Mens from "../pages/Mens";
 import Sneakers from "../pages/Sneakers";
 import Womens from "../pages/Womens";
@@ -43,6 +44,10 @@ export const router = createBrowserRouter([
                 path: "/store/:id",
                 element: <Item />,
             },
+            {
+                path: '/login',
+                element: <Login/>,
+            }
         ],
     },
 ])

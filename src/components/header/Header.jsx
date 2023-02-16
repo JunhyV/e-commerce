@@ -1,12 +1,15 @@
 import React from 'react'
-import NavBar from './NavBar'
-import UserOptions from './UserOptions'
+import { Link } from 'react-router-dom'
+import NavBar from './navbar/NavBar'
+import UserOptions from './userOptions/UserOptions'
 
 const Header = () => {
   return (
     <header className='header'>
       <NavBar/>
-      <h1 className='header__h1'>D-Shop, Inc.</h1>
+      <Link className="navbar__link link" to="/">
+              <h1 className='header__h1'>D-Shop, Inc.</h1>
+      </Link>
       <UserOptions/>
     </header>
   )

@@ -2,9 +2,10 @@ import { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux'
 
 const useFilters = (type) => {
-  const store = useSelector(state => state.store.onStore);
+  const store = useSelector(state => state.store.storeState.onStore);
   const [data, setData] = useState([])
   const category = type;
+  const filter = store.filter(product => product.title === category);
 
   useEffect(() => {
     const filterData = store.filter(product => product.title === category);
@@ -12,25 +13,23 @@ const useFilters = (type) => {
   }, [])
 
   const changeData = (value) => {
-    const filter = store.filter(product => product.price <= value);
-    const filterProducts = filter.filter(product => product.title === category);
+    const filterByPrice = store.filter(product => product.price <= value);
+    const filterProducts = filterByPrice.filter(product => product.title === category);
     setData(filterProducts)
+    return filterByPrice;
   }
   
   const orderByCheapest= () => {
-    const filter = store.filter(product => product.title === category);
     const order = filter.sort((a, b)=> a.price - b.price)
     setData(order);
   }
   
   const orderByExpensive= () => {
-    const filter = store.filter(product => product.title === category);
     const order = filter.sort((a, b)=> b.price - a.price)
     setData(order);
   }
   
   const orderDefault= () => {
-    const filter = store.filter(product => product.title === category);
     setData(filter);
   }
 

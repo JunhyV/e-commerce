@@ -4,7 +4,7 @@ import { Link, useLocation } from "react-router-dom";
 import Recommended from "./Recommended";
 
 const Item = () => {
-  const data = useSelector((state) => state.store.onStore);
+  const data = useSelector((state) => state.store.storeState.onStore);
 
   const location = useLocation();
   const { state } = location;

@@ -10,7 +10,7 @@ const Womens = () => {
   return (
     <div >
       <FilterSelector orderByCheapest={orderByCheapest} orderByExpensive={orderByExpensive} orderDefault={orderDefault}/>
-      <FilterBar changeData={changeData} min={90} max={186}/>
+      <FilterBar changeData={changeData} min={20} max={136}/>
       <Products data={data}/>
     </div>
   )
