@@ -9,7 +9,6 @@ import {
 
 const CartContent = ({ handleContent }) => {
   const cart = useSelector((state) => state.store.storeState.onCart);
-  console.log(cart);
   const dispatch = useDispatch();
 
   return (
@@ -21,7 +20,7 @@ const CartContent = ({ handleContent }) => {
         <div className="cart__products">
           {cart.map((product) => (
             <div key={product.item_id} className="cart__card">
-              <img src={product.imageUrl} alt="product-view" />
+              <img className="cart__img" src={product.imageUrl} alt="product-view" />
               <h3>{product.name}</h3>
               <div className="cart__stock">
                 <p>
@@ -51,7 +50,7 @@ const CartContent = ({ handleContent }) => {
         </div>
       </main>
       <h3 className="cart__subtotal">Subtotal = ${cart.reduce((amount,product) => (product.price * product.quantity) + amount, 0)}</h3>
-      <button onClick={() => dispatch(clearCart(product.item_id))}>
+      <button onClick={() => dispatch(clearCart())}>
         clear
       </button>
       <footer>subtotal buy return home</footer>

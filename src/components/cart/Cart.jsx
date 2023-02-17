@@ -1,10 +1,12 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import useDisplay from "../../hooks/useDisplay";
 import CartContent from "./CartContent";
 
 const Cart = () => {
     const { displayContent, handleContent } = useDisplay();
-    const x = 1;
+    const cart = useSelector(state => state.store.storeState.onCart)
+    const itemsOnCart = cart.reduce((a,b) => a + b.quantity, 0);
   return (
     <>
       <button className="btn cart" onClick={handleContent}>
@@ -27,9 +29,9 @@ const Cart = () => {
           <path d="M6 5l14 1l-1 7h-13" />
         </svg>
 
-        {x > 0 ? (
+        {itemsOnCart > 0 ? (
           <div className="cart__box">
-            <p className="cart__quantity">{x}</p>
+            <p className="cart__quantity">{itemsOnCart}</p>
           </div>
         ) : null}
       </button>

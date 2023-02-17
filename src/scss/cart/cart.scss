@@ -9,3 +9,23 @@
     height: 100vh;
     background-color: aqua;
 }
+
+.cart__products{
+    display: flex;
+    flex-direction: column;
+    gap: v.$separacion;
+}
+.cart__card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 10rem;
+    background-color: white;
+    border: 2px solid black;
+}
+
+.cart__img{
+    width: 10rem;
+    height: 100%;
+}

@@ -1,5 +1,5 @@
 import { createSlice, current } from "@reduxjs/toolkit";
-import { callStore } from "../../utils/apiCall";
+import { callStore } from "../../utils/callStore";
 
 const initialState = {
   onStore: await callStore("http://localhost:5000/api/store/collections"),

@@ -3,6 +3,7 @@ import persistReducer from "redux-persist/es/persistReducer";
 import storage from "redux-persist/lib/storage";
 import thunk from "redux-thunk";
 import { storeReducer } from "./features/storeSlice";
+import { userReducer } from "./features/userSlice";
 
 const persistConfig = {
     key: 'root',
@@ -11,7 +12,8 @@ const persistConfig = {
 }
 
 const rootReducer = combineReducers({
-    storeState: storeReducer 
+    storeState: storeReducer, 
+    userState: userReducer
 })
 
 const persistedReducer = persistReducer(persistConfig, rootReducer)
@@ -19,6 +21,7 @@ const persistedReducer = persistReducer(persistConfig, rootReducer)
 export const store = configureStore({
     reducer: {
         store: persistedReducer,
+        user: persistedReducer,
         middleware: [thunk]
     },
 })

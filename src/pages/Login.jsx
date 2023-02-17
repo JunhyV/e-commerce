@@ -1,20 +1,17 @@
 import React from "react";
+import SignOut from "../components/login/SignOut";
+import SignUp from "../components/login/SignUp";
 
 const Login = () => {
-  return (
-    <form className="login">
-      <label className="login__title">Login</label>
-      <div>
-        <input type="email" placeholder="Your Email" />
-        <input type="password" placeholder="Password" />
-        <p>Forgot your password?</p>
-      </div>
-      <div className="login__">
-              <button>Sign In</button>
-      </div>
 
-    </form>
+  return (
+    <div>
+      
+      <SignUp />
+      <SignOut />
+    </div>
   );
 };
 
 export default Login;
+

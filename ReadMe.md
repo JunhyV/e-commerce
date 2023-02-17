@@ -30,3 +30,6 @@ Config 1.7
 3.- Pagina de login
 4.- Diseño del navbar
 5.- Local Storage
+
+Config 1.8
+1.-Agregado login (No funciona full aun)
