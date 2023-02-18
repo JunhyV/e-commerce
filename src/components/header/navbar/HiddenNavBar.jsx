@@ -29,7 +29,7 @@ const HiddenNavBar = () => {
 
       {displayContent ? (
         <div className="navbar__hidden">
-            <button onClick={handleContent}>close</button>
+            <button className="closeButton" onClick={handleContent}>x</button>
           <Links />
         </div>
       ) : null}

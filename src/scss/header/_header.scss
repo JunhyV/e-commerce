@@ -7,9 +7,9 @@
     justify-content: space-between;
     padding: v.$separacion;
     position: relative;
-    background-color: aqua;
+    background-color: rgb(10, 30, 212);
 
-    .header__h1{
+    .header__h1 {
         width: 25rem;
         position: absolute;
         left: 50%;
@@ -17,5 +17,6 @@
         display: flex;
         justify-content: center;
         z-index: 1;
+        color: rgb(234, 233, 236);
     }
 }
