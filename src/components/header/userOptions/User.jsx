@@ -9,7 +9,7 @@ const User = () => {
         <button className="btn">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="icon icon-tabler icon-tabler-user"
+            className="icon icon-tabler icon-tabler-user svg"
             width="30"
             height="30"
             viewBox="0 0 24 24"

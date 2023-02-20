@@ -10,7 +10,7 @@ const HiddenNavBar = () => {
       <button className="btn" onClick={handleContent}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-menu-2"
+          className="icon icon-tabler icon-tabler-menu-2 svg"
           width="32"
           height="32"
           viewBox="0 0 24 24"

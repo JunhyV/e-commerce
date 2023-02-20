@@ -1,0 +1,13 @@
+@use '../base/var' as v;
+
+.post{
+    .post__img{
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+    }
+    .post__title{
+        text-transform: uppercase;
+        color: v.$white;
+    }
+}

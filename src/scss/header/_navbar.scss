@@ -6,27 +6,17 @@
     flex-direction: inherit;
     align-items: center;
     padding: 1rem;
-    background-color: #e6e6e6;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 100%;
-    &:hover {
-        box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-      }
-    .btn {
-        display: absolute;
-        left: 50%;
-        transform: translateX(-17%);
-    }
 }
 
 .navbar__hidden {
     position: absolute;
     height: 100vh;
-    width: 25%;
+    width: 100vw;
     top: 0;
     left: 0;
     z-index: 2;
-    background-color: rgb(26, 55, 200);
+    background-color: v.$purple;
     
 
     .horizontal-list {
@@ -34,8 +24,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        list-style-type: none;
+        padding: 1rem;
         top: 30px;
       }
     
@@ -45,9 +34,6 @@
         margin: 0.5rem 0;
         font-size: 1.2rem;
         font-weight: bold;
-        &:hover {
-            box-shadow: 0 4px 3px 1px #FCFCFC, 0 6px 8px #D6D7D9, 0 -4px 4px #CECFD1, 0 -6px 4px #FEFEFE, inset 0 0 3px 3px #CECFD1;
-          }
     }
     
     .closeButton {
@@ -64,16 +50,13 @@
             background-image: linear-gradient(to top, #D8D9DB 0%, #fff 80%, #FDFDFD 100%);
             border-radius: 30px;
             border: 1px solid #8F9092;
-            transition: all 0.2s ease;
+            transition: all 2s ease;
             font-family: "Source Sans Pro", sans-serif;
             font-size: 14px;
             font-weight: 600;
             color: #606060;
             text-shadow: 0 1px #fff;
-            
-            &:hover {
-                box-shadow: 0 4px 3px 1px #db0505, 0 6px 8px #ec0a0a, 0 -4px 4px #f40707, 0 -6px 4px #e60404, inset 0 0 3px 3px #CECFD1;
-              }
+          
     }
           
           

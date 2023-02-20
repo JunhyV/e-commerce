@@ -12,7 +12,7 @@ const Products = ({ data }) => {
             to={`/store/${product.item_id} `}
             state={{ id: product.item_id, title: product.title}}
           >
-            <div className="product__zoom">
+            <div className="product__zoom zoom">
               <img
                 className="product__img"
                 src={product.imageUrl}
@@ -22,7 +22,7 @@ const Products = ({ data }) => {
           </Link>
 
           <Link
-            className="link"
+            className="product__link link"
             to={`/store/${product.item_id}`}
             state={{ id: product.item_id, title: product.title}}
           >

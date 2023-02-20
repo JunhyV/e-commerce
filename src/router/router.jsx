@@ -3,14 +3,14 @@ import Item from "../components/forEach/Item";
 import LayoutPublic from "../layout/LayoutPublic";
 import NotFound from "../layout/NotFound";
 import Finish from "../pages/Finish";
-import Hats from "../pages/Hats";
+import Hats from "../pages/categories/Hats";
 import Home from "../pages/Home";
-import Jackets from "../pages/Jackets";
+import Jackets from "../pages/categories/Jackets";
 import Login from "../pages/Login";
-import Mens from "../pages/Mens";
+import Mens from "../pages/categories/Mens";
 import Register from "../pages/Register";
-import Sneakers from "../pages/Sneakers";
-import Womens from "../pages/Womens";
+import Sneakers from "../pages/categories/Sneakers";
+import Womens from "../pages/categories/Womens";
 
 export const router = createBrowserRouter([
     {

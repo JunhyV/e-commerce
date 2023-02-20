@@ -12,7 +12,7 @@ const Cart = () => {
       <button className="btn cart" onClick={handleContent}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="icon icon-tabler icon-tabler-shopping-cart"
+          className="icon icon-tabler icon-tabler-shopping-cart svg"
           width="30"
           height="30"
           viewBox="0 0 24 24"

@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const FilterBar = ({changeData, min, max}) => {
+  const [value, setValue] = useState(0);
+  
   return (
-    <div className="filter">
-      <div className="filter__priceRange">
+      <div className="filter__byRange ">
         <input
           type="range"
           min={min}
           max={max}
+          className='filter__range'
           onChange={(e) => {
-            rangeValue.value = `$${e.target.value}`;
             changeData(e.target.value)
+            setValue(e.target.value)
           }}
         />
-        <output id="rangeValue"> -</output>
+        <output className="filter__price" id="rangeValue">${value}</output>
       </div>
-    </div>
   );
 };
 

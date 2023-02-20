@@ -1,0 +1,14 @@
+@use "../base/var" as v;
+
+.categories {
+  background-color: v.$white;
+
+  .categories__post {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: v.$dark-purple;
+  }
+}

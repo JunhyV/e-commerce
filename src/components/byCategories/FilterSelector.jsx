@@ -2,9 +2,9 @@ import React from "react";
 
 const FilterSelector = ({orderByCheapest, orderByExpensive, orderDefault}) => {
   return (
-    <div>
       <select
         name="orderByPrice"
+        className="filter__byOrder"
         onChange={(e) => {
           if (e.target.value === "Cheapest") {
             orderByCheapest();
@@ -21,7 +21,6 @@ const FilterSelector = ({orderByCheapest, orderByExpensive, orderDefault}) => {
         <option value="Cheapest">Cheapest</option>
         <option value="Expensive">Expensive</option>
       </select>
-    </div>
   );
 };
 

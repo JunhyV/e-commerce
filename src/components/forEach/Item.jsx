@@ -1,32 +1,48 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import { addTocart } from "../../redux/features/storeSlice";
 import Recommended from "./Recommended";
 
 const Item = () => {
   const data = useSelector((state) => state.store.storeState.onStore);
+  const dispatch = useDispatch();
 
   const location = useLocation();
   const { state } = location;
 
   const product = data.filter((product) => state.id === product.item_id);
-  const otherProducts = data.filter((product) => state.id !== product.item_id && state.title === product.title);
+  const otherProducts = data.filter(
+    (product) => state.id !== product.item_id && state.title === product.title
+  );
 
-  const { imageUrl, name, price, title } = product[0];
+  const { imageUrl, name, price, title, item_id } = product[0];
+  console.log(product[0]);
 
   return (
     <div className="item">
-      <Link to={`/${title}`}>&laquo; Back</Link>
-      <img src={imageUrl} alt="product-img" />
-
+      <Link className="backBtn link" to={`/${title}`}>
+        &laquo; Back
+      </Link>
       <div className="item__content">
-        <h2>{name}</h2>
-        <p>{price}</p>
-        <p>{title}</p>
-        <button>Add to cart</button>
+        <img className="item__img" src={imageUrl} alt="product-img" />
+
+        <div className="item__text">
+          <h2 className="item__h2">Product: {name}</h2>
+          <p>Price: ${price}</p>
+          <p>Category: {title}</p>
+          <button
+            className="item__addBtn"
+            onClick={() => dispatch(addTocart(item_id))}
+          >
+            Add to cart
+          </button>
+        </div>
       </div>
-      recommended
-      <Recommended otherProducts={otherProducts}/>
+      <div className="recommended">
+        <h2>Recommended:</h2>
+        <Recommended otherProducts={otherProducts} />
+      </div>
     </div>
   );
 };

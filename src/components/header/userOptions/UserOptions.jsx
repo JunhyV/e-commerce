@@ -7,7 +7,7 @@ const UserOptions = () => {
   const {windowSize} = useWindow();
   return (
     <div className="user__options">
-      {windowSize > 768 ? <User/> : null}
+      {windowSize >= 768 ? <User/> : null}
       <Cart/>
     </div>
   );

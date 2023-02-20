@@ -7,7 +7,7 @@ const AddBtn = ({id}) => {
 
   return (
     <button
-      className="btn"
+      className="product__addBtn btn"
       onClick={() => dispatch(addTocart(id))}
     >
       <svg

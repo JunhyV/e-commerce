@@ -5,8 +5,8 @@ import perrito from "../assets/perritosad.webp";
 const NotFound = () => {
   return (
     <div className="error">
-      <div>
-        <h2>Sorry</h2>
+      <div className="error__text">
+        <h2>Sorry!</h2>
         <h3>We couldn't find that page</h3>
         <p>
           Try to{" "}

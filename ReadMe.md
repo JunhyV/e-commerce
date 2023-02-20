@@ -40,3 +40,7 @@ Config 1.9
 3.- Login ya aparece en la barra de opciones cuando es mobile
 4.- Necesita logear antes de realizar la compra
 5.- Agregada pagina de error
+
+Config 1.9.1
+1.-Cambios a estilos:
+categorias, productos, navbar, svgs, titulo

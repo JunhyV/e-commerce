@@ -1,12 +1,38 @@
-//Ejemplo: 
-.text-center{
-    text-align: center;
+@use 'var' as v;
+
+.text-center {
+  text-align: center;
 }
-.btn{
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+
+.btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
-.link{
-    text-decoration: none;
+
+.link {
+  text-decoration: none;
+}
+
+.backBtn{
+  background-color: v.$dark-purple;
+  display: block;
+  font-weight: bold;
+  border-radius: 3rem;
+  color: v.$white;
+  width: 8rem;
+  text-align: center;
+  margin: 1rem;
+
+  &:hover{
+    background-color: v.$light-purple;
+  }
+}
+
+.svg{
+  stroke: v.$dark-orange;
+  
+  &:hover{
+    stroke: v.$light-orange;
+  }
 }

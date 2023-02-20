@@ -1,0 +1,42 @@
+@use "../base/var" as v;
+
+.recommended {
+  padding: 2rem;
+  
+  .recommended__container {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: v.$separacion;
+    overflow-x: scroll;
+
+    .recommended__card {
+      display: flex;
+      flex-direction: column;
+      width: 10rem;
+      border: 3px solid v.$dark-orange;
+      color: v.$dark-purple;
+
+      &:hover {
+        border: 3px solid v.$light-orange;
+        color: v.$light-purple;
+      }
+
+      .recommended__content {
+        height: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .recommended__name {
+          font-size: 1.2rem;
+        }
+      }
+
+      .recommended__img {
+        width: 100%;
+        height: 10rem;
+      }
+    }
+  }
+}

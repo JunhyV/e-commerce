@@ -1,56 +1,19 @@
 @use '../base/var' as v;
-
-$header-bg-color: #f8f8f8;
-$header-text-color: #353535;
-$btn-bg-color: transparent;
-$btn-text-color: $header-text-color;
-$btn-border: none;
-$btn-focus-outline: none;
-$link-text-color: $header-text-color;
-$link-text-decoration: none;
-
 .header {
-  background-color: $header-bg-color;
+  background-color: v.$purple;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
 
-  .navbar {
-    display: flex;
-    align-items: center;
-
-    .btn {
-      background-color: $btn-bg-color;
-      color: $btn-text-color;
-      border: $btn-border;
-      outline: $btn-focus-outline;
-      cursor: pointer;
-      margin-right: 1rem;
+  .header__link{
+    color: v.$white;
+    &:hover span{
+      color: v.$light-orange;
     }
-
-    .navbar__link {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
+    .header__span{
+      color: v.$dark-orange;
     }
-    
-    .header__h1 {
-      font-size: 36px;
-      font-weight: bold;
-      color: #000;
-      margin: 0;
-    }
-    
-    .header__h1::after {
-      content: "";
-      display: block;
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background-color: #f00;
-      margin-left: 10px;
-    }    
   }
 }
 

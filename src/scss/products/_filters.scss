@@ -1,0 +1,26 @@
+@use "../base/var" as v;
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: v.$separacion;
+  padding: 1rem;
+  background-color: v.$dark-purple;
+
+  .filter__byRange {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    .filter__price {
+      color: v.$white;
+      font-weight: 00;
+    }
+  }
+
+  .filter__byOrder{
+    width: 10rem;
+    font: italic 1.5rem  v.$main-font ;
+  }
+}

@@ -1,5 +1,17 @@
-@mixin color($color){
-    color: $color;
-    font-size: 4rem;
-    font-style: italic;
+@use 'var' as v;
+
+@mixin h-mobile{
+    @media (min-width: v.$h-mobile) {
+        @content;
+    }
+}
+@mixin tablet{
+    @media (min-width: v.$tablet) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width: v.$desktop) {
+        @content;
+    }
 }
