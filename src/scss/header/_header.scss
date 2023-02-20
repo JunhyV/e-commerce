@@ -1,6 +1,6 @@
 @use '../base/var' as v;
 
-$header-bg-color: #f8f8f8;
+$header-bg-color: #f6e0e0c8;
 $header-text-color: #353535;
 $btn-bg-color: transparent;
 $btn-text-color: $header-text-color;
@@ -15,6 +15,8 @@ $link-text-decoration: none;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  width: 100%;
+  
 
   .navbar {
     display: flex;

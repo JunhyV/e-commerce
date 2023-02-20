@@ -14,9 +14,9 @@ const CartContent = ({ handleContent }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="cart__content">
-      <header>
-        <button onClick={handleContent}>close</button>
+      <div className="cart__content">
+      <header className="closeButton">
+        <button onClick={handleContent}>x</button>
       </header>
       <main>
         <div className="cart__products">
@@ -62,7 +62,7 @@ const CartContent = ({ handleContent }) => {
           0
         )}
       </h3>
-      <button onClick={() => dispatch(clearCart())}>clear</button>
+      <button className="clearButton" onClick={() => dispatch(clearCart())}>clear</button>
       {login ? <Link className="link" to='/finish'>Buy</Link> : <Link className="link" to='/login'>Buy</Link>}
 
       <footer>return home</footer>
