@@ -14,7 +14,7 @@
       display: flex;
       justify-content: flex-end;
       padding: 0.5rem;
-      background-color: lightgray;
+      background-color: #9d4edd;
       color: white;
   
       button {
@@ -93,7 +93,7 @@
     }
   
     .clearButton {
-      background-color: lightgray;
+      background-color: #5a189a;
       border: none;
       padding: 0.5rem;
       margin-top: 1rem;
@@ -101,21 +101,22 @@
       cursor: pointer;
       transition: background-color 0.2s;
       border-radius: 5px;
+      color: white;
   
       &:hover {
-        background-color: darkgray;
+        background-color: #ff8500;
         color: white;
       }
     }
   
     .link {
       display: block;
-      background-color: lightgray;
+      background-color: #240046;
       padding: 0.5rem;
       margin-top: 1rem;
       text-align: center;
       text-decoration: none;
-      color: black;
+      color: rgb(246, 244, 244);
       font-size: 1.2rem;
       font-weight: bold;
       cursor: pointer;
@@ -129,7 +130,7 @@
   
     footer {
       padding: 1rem;
-      background-color: lightgray;
+      background-color: #ff6d00;
       color: white;
       text-align: center;
       font-size: 1.2rem;

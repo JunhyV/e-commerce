@@ -15,7 +15,7 @@ const CartContent = ({ handleContent }) => {
 
   return (
       <div className="cart__content">
-      <header className="closeButton">
+      <header>
         <button onClick={handleContent}>x</button>
       </header>
       <main>
