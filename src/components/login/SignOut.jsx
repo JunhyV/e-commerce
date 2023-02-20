@@ -6,8 +6,8 @@ const SignOut = () => {
     const dispatch = useDispatch();
   return (
     <div>
-        <h1>Welcome!</h1>
-        <button>Sign Out</button>
+        <h1>Welcome User!</h1>
+        <button onClick={() => dispatch(signOut())}>Sign Out</button>
     </div>
   )
 }

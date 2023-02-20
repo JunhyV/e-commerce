@@ -8,7 +8,7 @@ import { userReducer } from "./features/userSlice";
 const persistConfig = {
     key: 'root',
     storage,
-    whitelist: ['storeState']
+    whitelist: ['storeState', 'userState']
 }
 
 const rootReducer = combineReducers({

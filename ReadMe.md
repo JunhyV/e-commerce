@@ -33,3 +33,10 @@ Config 1.7
 
 Config 1.8
 1.-Agregado login (No funciona full aun)
+
+Config 1.9
+1.- Ya funciona bien la parte de Sign Up y Sign Out
+2.- Agregado Registro de usuario
+3.- Login ya aparece en la barra de opciones cuando es mobile
+4.- Necesita logear antes de realizar la compra
+5.- Agregada pagina de error

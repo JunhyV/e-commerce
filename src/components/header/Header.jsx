@@ -8,7 +8,7 @@ const Header = () => {
     <header className='header'>
       <NavBar/>
       <Link className="navbar__link link" to="/">
-              <h1 className='header__h1'>D-Shop, Inc.</h1>
+              <h1>D-Shop, Inc.</h1>
       </Link>
       <UserOptions/>
     </header>

@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useDispatch} from "react-redux";
 import { Link } from "react-router-dom";
@@ -33,21 +34,24 @@ const SignUp = () => {
       </div>
       <div className="login__button">
         <button
-          type="submit"
           onClick={(e) => {
             e.preventDefault();
-            dispatch(
-              signUp({
+            axios
+              .post("http://localhost:5000/api/auth/login", {
                 email: email,
                 password: password,
               })
-            );
+              .then((res) => dispatch(signUp(res.data)))
+              .catch(error =>{
+                if (error.response.data.success === false) {
+                  alert('Your email or password is incorrect')
+                }})
           }}
         >
           Sign In
         </button>
         <p>
-          New at D-shop? <Link>Sign up now</Link>{" "}
+          New at D-shop? <Link className="link" to='/register'>Sign up now</Link>
         </p>
       </div>
     </form>
