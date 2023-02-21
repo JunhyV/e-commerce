@@ -6,45 +6,33 @@ const Links = () => {
   const { windowSize } = useWindow();
 
   return (
-    <ul className="horizontal-list">
-      <li>
-        <Link className="navbar__link link" to="/hats">
-          Hats
-        </Link>
-      </li>
+    <div className="navbar">
+      <Link className="navbar__link link" to="/hats">
+        Hats
+      </Link>
 
-      <li>
-        <Link className="navbar__link link" to="/jackets">
-          Jackets
-        </Link>
-      </li>
+      <Link className="navbar__link link" to="/jackets">
+        Jackets
+      </Link>
 
-      <li>
-        <Link className="navbar__link link" to="/mens">
-          Mens
-        </Link>
-      </li>
+      <Link className="navbar__link link" to="/mens">
+        Mens
+      </Link>
 
-      <li>
-        <Link className="navbar__link link" to="/sneakers">
-          Sneakers
-        </Link>
-      </li>
+      <Link className="navbar__link link" to="/sneakers">
+        Sneakers
+      </Link>
 
-      <li>
-        <Link className="navbar__link link" to="/womens">
-          Womens
-        </Link>
-      </li>
+      <Link className="navbar__link link" to="/womens">
+        Womens
+      </Link>
 
       {windowSize < 768 ? (
-        <li>
-          <Link className="navbar__link link" to="/login">
-            Login
-          </Link>
-        </li>
+        <Link className="navbar__link link" to="/login">
+          Login
+        </Link>
       ) : null}
-    </ul>
+    </div>
   );
 };
 

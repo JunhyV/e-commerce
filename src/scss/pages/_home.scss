@@ -24,6 +24,16 @@
     max-width: 900px;
     margin-top: 20px;
 
+    @include m.tablet{
+      display: grid;
+      grid: repeat(3, 1fr) / repeat(2, 1fr);
+      gap: v.$separacion;
+    }
+
+    @include m.desktop{
+      grid: repeat(2, 1fr) / repeat(3, 1fr);
+    }
+
     .home__galery {
       width: 100%;
       margin-bottom: 20px;

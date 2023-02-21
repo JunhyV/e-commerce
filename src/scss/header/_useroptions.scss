@@ -1,3 +1,5 @@
+@use '../base/var' as v;
+
 .user__options {
   display: flex;
   align-items: center;
@@ -12,7 +14,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: red;
+    background-color: v.$light-purple;
+    color: v.$white;
+    font-weight: bold;
     width: 1.5rem;
     height: 1.2rem;
     border-radius: 50%;
